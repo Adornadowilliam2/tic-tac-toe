@@ -27,7 +27,7 @@ function handleCellClick(e) {
 
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
 
-    if (currentPlayer === 'O') {
+    if (currentPlayer == 'O') {
         makeAIMove();
     }
 }
@@ -37,7 +37,7 @@ function makeAIMove() {
     let move;
 
     for (let i = 0; i < cells.length; i++) {
-        if (cells[i].innerHTML === '') {
+        if (cells[i].innerHTML == '') {
             cells[i].innerHTML = 'O';
             let score = minimax(cells, 0, false);
             cells[i].innerHTML = '';
@@ -109,9 +109,9 @@ function checkWin(player) {
 
     for (let combination of winningCombinations) {
         if (
-            cells[combination[0]].innerHTML === player &&
-            cells[combination[1]].innerHTML === player &&
-            cells[combination[2]].innerHTML === player
+            cells[combination[0]].innerHTML == player &&
+            cells[combination[1]].innerHTML == player &&
+            cells[combination[2]].innerHTML == player
         ) {
             return true;
         }
@@ -122,7 +122,7 @@ function checkWin(player) {
 
 function checkDraw() {
     for (let cell of cells) {
-        if (cell.innerHTML === '') {
+        if (cell.innerHTML == '') {
             return false;
         }
     }
