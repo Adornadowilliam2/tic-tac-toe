@@ -1,53 +1,51 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
 .board {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-body{
-    background-color: black;
-    height: 100vh;
+body {
+  background-color: black;
+  height: 100vh;
 }
 
-.lane{
-    display: flex;
-    flex-direction: row;
+.lane {
+  display: flex;
+  flex-direction: row;
 }
 
-h1{
-    text-align: center;
-    text-shadow: 0 0 5px #00ff00,
-0 0 10px #00ff00,
-0 0 15px #00ff00,
-0 0 20px #00ff00;
-padding: 20px;
+h1 {
+  text-align: center;
+  text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00,
+    0 0 20px #00ff00;
+  padding: 20px;
 }
 
-.cell{
-    border-radius: 10px;
-    border: 2px solid white;
-    width: 100px;
-    height: 100px;
-    background-color: black;
-    display: flex;
-    color: white;
-    font-size: 100px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin: 10px;
+.cell {
+  border-radius: 10px;
+  border: 2px solid white;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  color: white;
+  font-size: 100px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px;
 }
 
-
-
- 
-
+button {
+  background-color: black;
+  border: none;
+}
